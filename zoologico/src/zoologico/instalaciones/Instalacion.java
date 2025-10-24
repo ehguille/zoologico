@@ -8,11 +8,11 @@ public abstract class Instalacion {
 		this.identificador=identificador;
 	}
 	
-	public String getUbicacion() {
+	public String getIdentificador() {
 		return identificador;
 	}
 	
-	public void setUbicacion(String identificador) {
+	public void setIdentificador(String identificador) {
 		this.identificador=identificador;
 	}
 	

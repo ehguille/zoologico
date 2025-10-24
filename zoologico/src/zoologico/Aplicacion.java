@@ -4,22 +4,25 @@ import zoologico.trabajadores.*;
 import zoologico.instalaciones.*;
 
 public class Aplicacion {
+	
 
 	public Aplicacion() {
 
-		Instalacion unAcuario=new Acuario("Zona infantil",200);
+		//Creo ubicaciones
+		Acuario unAcuario=new Acuario("Zona infantil",200);
+		Parque unParque=new Parque("Zona salvaje",5000);
+		Jaula unaJaula=new Jaula("Zona mamíferos",100);
 		
+		//Creo animales
 		Pez unPez=new Bocarte(unAcuario);
 		Delfin unDelfin=new Delfin(unAcuario);
-		Perro unPerro=new Perro("Mestizo","Pepi", unAcuario);
+		Perro unPerro=new Perro("Mestizo","Pepi", unaJaula);
 		
-		//Polimorfismo
-		Empleado unEmpleado=new Cuidador("Manolo");
-
+		//Creo empleados
+		Empleado unEmpleado=new Cuidador("Manolo",24000);
 		unEmpleado.trabajar(unPerro);
-		
-		unEmpleado=new Limpiador("Luis");
-		
+		unEmpleado.trabajar(unDelfin);
+		unEmpleado=new Limpiador("Luis",20000);
 		unEmpleado.trabajar(unPerro);
 		
 	}
