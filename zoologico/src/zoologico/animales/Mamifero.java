@@ -8,6 +8,8 @@ public abstract class Mamifero extends Animal {
 	//su superclase porque cambia en sus hijos.
 	protected final boolean tienePulmones, tieneBranquias;
 	
+	public static final int MAX_NUMERO_PATAS=4;
+	
 	protected Mamifero(Instalacion instalacion) {
 		super(instalacion);
 		this.tieneBranquias=false;

@@ -25,5 +25,5 @@ public abstract class Animal {
 	public void setInstalacion(Instalacion instalacion) {
 		this.instalacion=instalacion;
 	}
-	
+
 }

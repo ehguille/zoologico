@@ -25,6 +25,12 @@ public class Aplicacion {
 		unEmpleado=new Limpiador("Luis",20000);
 		unEmpleado.trabajar(unPerro);
 		
+		//Ejemplos para ilustrar constantes y static.
+		
+		System.out.println(unPerro.MAX_NUMERO_PATAS);
+		System.out.println(unDelfin.MAX_NUMERO_PATAS);
+		System.out.println(Mamifero.MAX_NUMERO_PATAS);
+		
 	}
 	
 	public static void main(String[] args) {
