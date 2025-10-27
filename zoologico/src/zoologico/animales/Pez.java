@@ -3,12 +3,10 @@ import zoologico.instalaciones.*;
 
 public abstract class Pez extends Animal {
 
-	protected final boolean esViviparo;
 	protected boolean tieneAnisaquis;
 
-	public Pez(boolean esViviparo, int numeroAletas, Instalacion instalacion) {
+	public Pez(int numeroAletas, Instalacion instalacion) {
 		super(instalacion);
-		this.esViviparo = esViviparo;
 		this.numeroAletas = numeroAletas;
 		this.numeroPatas = 0;
 		this.tieneBranquias = true;
@@ -28,7 +26,6 @@ public abstract class Pez extends Animal {
 
 	public String toString() {
 		String descripcion = "[pez]" + "\n";
-		descripcion += "- ¿Es vivíparo? " + this.esViviparo + "\n";
 		descripcion += "- ¿Tiene anisaquis? " + this.tieneAnisaquis + "\n";
 		descripcion += "- Número de aletas: " + this.numeroAletas + "\n";
 		descripcion += "[/pez]";

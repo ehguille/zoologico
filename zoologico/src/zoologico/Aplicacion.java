@@ -31,6 +31,10 @@ public class Aplicacion {
 		System.out.println(unDelfin.MAX_NUMERO_PATAS);
 		System.out.println(Mamifero.MAX_NUMERO_PATAS);
 		
+		PezVolador unPezVolador=new PezVolador(unAcuario);
+		//Puedo consultar el MIN_NUMERO_HUEVOS, pero no cambiarlo.
+		System.out.println(Oviparo.MIN_NUMERO_HUEVOS);
+
 	}
 	
 	public static void main(String[] args) {

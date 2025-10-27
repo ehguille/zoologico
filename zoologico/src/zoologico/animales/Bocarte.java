@@ -2,10 +2,10 @@ package zoologico.animales;
 
 import zoologico.instalaciones.*;
 
-public class Bocarte extends Pez {
+public class Bocarte extends Pez implements Oviparo {
 
 	public Bocarte(Acuario instalacion) {
-		super(false, 3, instalacion);
+		super(3, instalacion);
 		this.numeroAletas = 3;
 		System.out.println("Se ha creado un bocarte.");
 		/**
@@ -30,5 +30,9 @@ public class Bocarte extends Pez {
 		descripcion += super.toString() + "\n";
 		descripcion += "[/bocarte]";
 		return descripcion;
+	}
+
+	public void ponerHuevos() {
+		System.out.println("Un bocarte pone muchos huevos");		
 	}
 }
